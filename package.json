@@ -19,17 +19,7 @@
     "tinycolor2": "^1.4.1"
   },
   "scripts": {
-    "test": "npm run lint && ava --color --verbose",
-    "start": "node_modules/.bin/http-server ./build/docs",
-    "lint": "node_modules/.bin/eslint ./src/js ./*.js ./test",
-    "lint-fix": "node_modules/.bin/eslint --fix ./src/js ./*.js ./test",
-    "build": "gulp clean && gulp dist && gulp docs",
-    "build-dist": "gulp dist",
-    "build-docs": "gulp dist && gulp docs",
-    "build-npm": "npm run build && gulp npm-prepublish",
-    "publish-dist": "echo \"Publishing dist into the docs folder... \" && npm run build && npm run test && gulp docs:add-dist",
-    "publish-docs": "npm run build && npm run test && gulp docs:add-v2-docs && gulp publish-gh-pages",
-    "publish-npm": "npm run build-npm && npm run test && npm publish"
+    "build": "npx webpack --config webpack.config.js"
   },
   "devDependencies": {
     "ava": "^0.23.0",
@@ -42,15 +32,6 @@
     "eslint": "^4.11.0",
     "eslint-loader": "^1.9.0",
     "gh-pages": "^1.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-compile-handlebars": "^0.6.1",
-    "gulp-header": "^1.8.9",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-shell": "^0.6.3",
-    "gulp-sourcemaps": "^2.6.1",
     "handlebars-layouts": "^3.1.4",
     "http-server": "^0.10.0",
     "jsdoc": "^3.5.5",
