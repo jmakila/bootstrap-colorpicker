@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jQuery"));
+		module.exports = factory(require("jquery"));
 	else if(typeof define === 'function' && define.amd)
-		define("bootstrap-colorpicker", ["jQuery"], factory);
+		define("bootstrap-colorpicker", ["jquery"], factory);
 	else if(typeof exports === 'object')
-		exports["bootstrap-colorpicker"] = factory(require("jQuery"));
+		exports["bootstrap-colorpicker"] = factory(require("jquery"));
 	else
-		root["bootstrap-colorpicker"] = factory(root["jQuery"]);
+		root["bootstrap-colorpicker"] = factory(root["jquery"]);
 })(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_0__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
