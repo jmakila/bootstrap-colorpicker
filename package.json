@@ -1,15 +1,12 @@
 {
-  "name": "bootstrap-colorpicker",
-  "version": "3.0.0-wip",
+  "name": "jm-bootstrap-colorpicker",
+  "version": "3.0.0",
   "description": "Simple and customizable colorpicker component for Twitter Bootstrap.",
   "main": "./dist/js/bootstrap-colorpicker.js",
   "homepage": "https://farbelous.github.io/bootstrap-colorpicker/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/farbelous/bootstrap-colorpicker.git"
-  },
-  "bugs": {
-    "url": "https://github.com/farbelous/bootstrap-colorpicker/issues"
+    "url": "https://github.com/jmakila/bootstrap-colorpicker.git"
   },
   "keywords": [
     "bootstrap",
